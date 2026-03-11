@@ -1,0 +1,47 @@
+body{
+font-family: Arial;
+margin:0;
+background:#0f172a;
+color:white;
+}
+
+header{
+text-align:center;
+padding:40px;
+background:#020617;
+}
+
+nav{
+text-align:center;
+background:#1e293b;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+section{
+padding:50px;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+}
+
+ul{
+line-height:1.8;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
