@@ -1,47 +1,213 @@
-body{
-font-family: Arial;
-margin:0;
-background:#0f172a;
-color:white;
+html{
+scroll-behavior:smooth;
 }
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#ffffff;
+color:#1e293b;
+}
+
+
+/* Header */
 
 header{
 text-align:center;
 padding:40px;
 background:#020617;
+color:white;
 }
 
+/* Contact Icons Under Header */
+
+.header-contact{
+margin-top:15px;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+font-size:14px;
+}
+
+.header-contact span{
+display:flex;
+align-items:center;
+gap:8px;
+transition:0.2s;
+}
+
+.header-contact span:hover{
+transform:scale(1.05);
+}
+
+.header-contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+.header-contact a:hover{
+text-decoration:underline;
+}
+
+.header-contact i{
+color:#38bdf8;
+font-size:16px;
+}
+
+/* Navigation */
+
 nav{
-text-align:center;
+display:flex;
+justify-content:center;
+align-items:center;
 background:#1e293b;
-padding:15px;
+padding:14px 0;
+gap:30px;
 }
 
 nav a{
 color:white;
-margin:10px;
 text-decoration:none;
+font-size:16px;
+font-weight:500;
+transition:0.3s;
 }
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* Sections */
 
 section{
-padding:50px;
-max-width:900px;
+padding:60px;
+max-width:1000px;
 margin:auto;
+background:white;
+color:#1e293b;
+border-bottom:1px solid #e2e8f0;
 }
 
+/* Section Headings */
+
+section h2{
+color:#0f172a;
+border-left:4px solid #38bdf8;
+padding-left:10px;
+margin-bottom:20px;
+}
+
+/* Cards */
+
 .card{
-background:#1e293b;
+background:#f1f5f9;
 padding:20px;
 margin:20px 0;
 border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
+
+/* Lists */
 
 ul{
 line-height:1.8;
 }
 
+/* Footer */
+
 footer{
 text-align:center;
 padding:20px;
 background:#020617;
+color:white;
+}
+
+/* Certifications Layout */
+
+.cert-container{
+display:flex;
+justify-content:space-between;
+gap:30px;
+margin-top:20px;
+}
+
+.cert-container .card{
+width:48%;
+}
+
+.cert-container ul{
+padding-left:20px;
+}
+
+.cert-container li{
+margin:8px 0;
+}
+
+/* Skills Layout */
+
+.skills-container{
+display:flex;
+gap:30px;
+margin-top:20px;
+}
+
+.skills-container .card{
+width:50%;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(2, 1fr);
+gap:8px 20px;
+padding-left:20px;
+}
+
+.skills-grid li{
+margin:6px 0;
+}
+
+/* Projects Layout */
+
+.projects-container{
+margin-top:20px;
+}
+
+.projects-container .card{
+width:100%;
+}
+
+/* Responsive Design */
+
+@media (max-width:768px){
+
+nav{
+flex-wrap:wrap;
+gap:20px;
+}
+
+.cert-container{
+flex-direction:column;
+}
+
+.cert-container .card{
+width:100%;
+}
+
+.skills-container{
+flex-direction:column;
+}
+
+.skills-container .card{
+width:100%;
+}
+
+.skills-grid{
+grid-template-columns:1fr;
+}
+
+.header-contact{
+gap:15px;
+font-size:13px;
+}
+
 }
